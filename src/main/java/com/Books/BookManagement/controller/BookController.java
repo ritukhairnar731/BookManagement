@@ -17,7 +17,7 @@ public class BookController {
     
 	@PostMapping("/save")   
 	   public String saveBook(@RequestBody Books books) {
-		System.out.println(books);
+		
 			 String msg = service.saveBook(books);
 				return msg;
 				
